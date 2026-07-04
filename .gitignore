@@ -1,0 +1,9 @@
+node_modules
+# Keep environment variables out of version control
+.env
+/generated
+package-lock.json
+/logs
+/docs
+/.cursor
+API_REFERENCE.md
