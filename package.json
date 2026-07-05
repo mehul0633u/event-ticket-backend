@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "tsx watch index.ts",
-    "start": "tsx index.ts",
-    "seed": "prisma db seed",
-    "typecheck": "tsc --noEmit"
-  },
+"scripts": {
+  "dev": "tsx watch index.ts",
+  "start": "tsx index.ts",
+  "build": "tsc",
+  "postinstall": "prisma generate",
+  "seed": "prisma db seed",
+  "typecheck": "tsc --noEmit"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
